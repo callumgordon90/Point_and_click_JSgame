@@ -1,12 +1,14 @@
 //Declaration of the class 'fighter'
 class Fighter {
 
-    constructor(health, stamina, strength, speed, agility) {
-        this.health = health;
+    constructor(name, stamina, strength, speed, agility) {
+        this.name = name;
+        this.health = 500;
         this.stamina = stamina;
         this.strength = strength;
         this.speed = speed;
         this.agility = agility;
+        this.parHazard = Math.floor(Math.random() * 9);
     }
 
     attack() {
@@ -21,17 +23,17 @@ class Fighter {
 
 //Making instances of the fighters
 
-let Spiderman = new Fighter(100, 89, 34, 56, 87 )
-let Batman = new Fighter(100, 34, 100, 45, 55 );
-let Hulk = new Fighter(100, 100, 100, 23, 43 );
-let Wonderwoman = new Fighter(100,67, 75, 23, 57 );
-let Callum = new Fighter(100, 75 , 67, 54, 89);
-let Zeus = new Fighter(100, 100, 100, 100, 100);
+let Spiderman = new Fighter("Spiderman", 90, 90, 90, 90 )
+let Batman = new Fighter("Batman", 90, 90, 90, 90 );
+let Hulk = new Fighter("Hulk", 90, 90, 90, 90 );
+let Wonderwoman = new Fighter("Wonderwoman",90, 90, 90, 90 );
+let Caminante = new Fighter("El Misterioso Caminante del Norte", 90, 90, 90, 90);
+let Zeus = new Fighter("Zeus", 100, 100, 100, 100);
 
 
 //Generating basic variable of the environment
 
-let allFighters = [Spiderman, Batman, Hulk, Wonderwoman, Callum, Zeus];
+let allFighters = [Spiderman, Batman, Hulk, Wonderwoman, Caminante, Zeus];
 
 let team1 = [];
 
