@@ -17,6 +17,39 @@ body {
     background-position: center;
 }
 
+.designScreen1Container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title{
+    all: unset;
+    background: black;
+    color: white;
+    font-family:'Press Start 2P', cursive;
+    font-size: large; 
+    padding: 1em;
+    border-radius: 1em;
+    transition: 0.5s; 
+}
+
+.startButton{
+    all: unset;
+    background: red;
+    color: white;
+    font-family:'Press Start 2P', cursive;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: 0.2em solid red;
+    transition: 0.5s;
+}
+
+/* Stage 2 */
+
 .designScreen2 {
     background-color: red;
 
@@ -24,12 +57,16 @@ body {
     width: 100vw;
 }
 
+/* Stage 3 */
+
 .designScreen3 {
     background-color: black;
 
     height: 100vh;
     width: 100vw;
 }
+
+/* Stage 4 */
 
 .designScreen4 {
     background-color: violet;
