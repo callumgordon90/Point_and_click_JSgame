@@ -19,25 +19,29 @@
 <body>
     
     <p>Batalla de los Superhéroes más Fuertes de la Galaxia</p>
-    <p>Press Start</p>
-
-    <section id="screen1" onclick="cambiaPantalla(2)">
-        <div class="designScreen1"></div>
+    
+<!-- Screen 1 -->
+    <section id="screen1">
+        <div class="designScreen1">
+            <button onclick="cambiaPantalla(2)" class="startButton">Choose your destiny: Press Start</button>
+        </div>
     </section>
-
+<!-- Screen 2 -->
     <section id="screen2" style="display:none" onclick="cambiaPantalla(3)">
         <div class="designScreen2"></div>
     </section>
-
+<!-- Screen 3 -->
     <section id="screen3" style="display:none" onclick="cambiaPantalla(4)">
         <div class="designScreen3"></div>
     </section>
+
+ <!-- Screen 4 -->
 
     <section id="screen4" style="display:none" onclick="cambiaPantalla(1)">
         <div class="designScreen4"></div>
     </section>
 
-    <script src="js/racers.js"></script>
+    <script src="js/fighters.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -8,11 +8,13 @@ body {
     font-family: 'Press Start 2P', cursive;
 }
 
-.designScreen1 {
-    background-color: green;
+/* Stage 1 */
 
+.designScreen1 {
     height: 100vh;
     width: 100vw;
+    background-image: url("../img/nebula.jpg");
+    background-position: center;
 }
 
 .designScreen2 {
