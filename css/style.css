@@ -6,6 +6,7 @@ body {
     width: 100vw;
 
     font-family: 'Press Start 2P', cursive;
+    cursor: crosshair;
 }
 
 /* Stage 1 */
@@ -46,6 +47,12 @@ body {
     border-radius: 1em;
     border: 0.2em solid red;
     transition: 0.5s;
+}
+
+.startButton:hover{
+    cursor:crosshair;
+    transform: scale(1.25);
+    transition: 0.25s;
 }
 
 /* Stage 2 */

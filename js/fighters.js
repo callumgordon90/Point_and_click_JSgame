@@ -11,12 +11,12 @@ class Fighter {
         this.parHazard = Math.floor(Math.random() * 9);
     }
 
-    attack() {
-        return this.velocidad += 30;
+    attack(enemy) {
+       enemy.life -= (this.strength - (enemy.stamina * (enemy.parHazard / this.speed))).toFixed();
     }
 
-    defend() {
-        return this.velocidad = 0;
+    superattack(enemy) {
+        enemy.life -= ((this.strength + this.agility) - (enemy.stamina * (enemy.parHazard / this.speed))).toFixed();
     }
 
 };
@@ -33,10 +33,11 @@ let Zeus = new Fighter("Zeus", 100, 100, 100, 100);
 
 //Generating basic variable of the environment
 
-let allFighters = [Spiderman, Batman, Hulk, Wonderwoman, Caminante, Zeus];
-
-let team1 = [];
-
-let team2 = [];
-
-let ganador = "";
+let allFighters = {
+    "One": player1,
+    "Two": player2,
+    "Three": player3,
+    "Four": player4,
+    "Five": player5,
+    "Six": player6
+}
