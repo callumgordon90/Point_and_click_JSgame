@@ -13,7 +13,7 @@ body {
 .designScreen1 {
     height: 100vh;
     width: 100vw;
-    background-image: url("../img/nebula.jpg");
+    background-image: url("../img/stars.gif");
     background-position: center;
 }
 
@@ -35,6 +35,10 @@ body {
     padding: 1em;
     border-radius: 1em;
     transition: 0.5s; 
+}
+
+.title:hover{
+    transform: scale(1.25);
 }
 
 .startButton{
