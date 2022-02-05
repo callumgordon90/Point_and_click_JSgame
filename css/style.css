@@ -13,7 +13,7 @@ body {
 .designScreen1 {
     height: 100vh;
     width: 100vw;
-    background-image: url("../img/stars.gif");
+    background-image: url("../img/skyscrapers.gif");
     background-position: center;
 }
 
@@ -148,11 +148,25 @@ body {
 /* Stage 3 */
 
 .designScreen3 {
-    background-color: black;
+    background-color: green;
 
     height: 100vh;
     width: 100vw;
+
+    background-position: center;
 }
+
+.designScreen3Container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
 
 /* Stage 4 */
 
