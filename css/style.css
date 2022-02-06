@@ -340,6 +340,11 @@ body{
     border-radius: 2em;
 }
 
+.winnerText:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
 .resetButton {
     all: unset;
     background: rgba(255, 0, 0, 0.561);
