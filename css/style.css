@@ -31,19 +31,21 @@ body{
 
 .title{
     all: unset;
-    background: black;
+    justify-items: center;
+    align-items: center;
+    background: #00000026;
     color: white;
     font-family:'Press Start 2P', cursive;
     font-size: large; 
     padding: 1em;
     border-radius: 1em;
     transition: 0.5s; 
-    align-items: top;
     margin-top: -7em;
+    margin-left: 1em;
 }
 
 .title:hover{
-    transform: scale(1.25);
+    transform: scale(1.05);
 }
 
 
@@ -72,6 +74,7 @@ body{
     height: 100vh;
     width: 100vw;
     background-image: url("../img/skyscrapers.gif");
+    background-size: cover;
 
 }
 
@@ -197,8 +200,9 @@ body{
     width: 100vw;
     
 
-    background-image: url("../img/nebula.jpg");
+    background-image: url("../img/loop1.gif");
     background-position: center;
+    background-size: cover;
 }
 
 .thirdScreenContainer{
@@ -225,7 +229,7 @@ body{
 .vs {
     font-family: 'Press Start 2P', cursive;;
     color: white;
-    background: red;
+    background: rgba(255, 0, 0, 0.561);
     font-size: 6em;
     margin: 0;
 }
@@ -249,7 +253,7 @@ body{
 .attackButton {
     all: unset;
     margin-top: 2em;
-    background: red;
+    background: rgba(255, 0, 0, 0.561);;
     font-family: 'Press Start 2P', cursive;
     color: white;
     padding: .5em;
@@ -260,6 +264,7 @@ body{
 
 .attackButton:hover {
     cursor: pointer;
+    background-color: red;
     transform: scale(1.05);
     transition: 0.5s;
 }
@@ -297,8 +302,9 @@ body{
     height: 100vh;
     width: 100vw;
 
-    background-image: url("../img/galaxy2.png");
+    background-image: url("../img/man.gif");
     background-position: center;
+    background-size: cover;
 }
 
 .fourthScreenContainer{
@@ -327,13 +333,16 @@ body{
 .winnerText {
     font-family: 'Press Start 2P', cursive;;
     color: white;
-    background: red;
+    background: rgba(0, 0, 0, 0.281);
     font-size: 3em;
+    text-align: center;
+    margin-right: 2.3em;
+    border-radius: 2em;
 }
 
 .resetButton {
     all: unset;
-    background: red;
+    background: rgba(255, 0, 0, 0.561);
     font-family: 'Press Start 2P', cursive;
     color: white;
     padding: .5em;
@@ -344,6 +353,7 @@ body{
 
 .resetButton:hover{
     cursor: crosshair;
+    background-color: red;
     transform: scale(1.05);
     transition: 0.5s;
 }
