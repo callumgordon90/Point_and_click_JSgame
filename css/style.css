@@ -38,6 +38,8 @@ body{
     padding: 1em;
     border-radius: 1em;
     transition: 0.5s; 
+    align-items: top;
+    margin-top: -7em;
 }
 
 .title:hover{
