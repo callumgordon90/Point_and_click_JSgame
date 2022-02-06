@@ -1,30 +1,33 @@
-body {
-    margin: 0;
-    padding: 0;
-
-    height: 100vh;
-    width: 100vw;
+body{
+    margin: 0em;
+    padding: 0em;
+    overflow: auto;
     font-family: 'Press Start 2P', cursive;
     cursor: crosshair;
 }
 
-/* Stage 1 */
 
-.designScreen1 {
+
+
+/* PANTALLA 1*/
+
+.firstScreen {
     height: 100vh;
     width: 100vw;
-    background-image: url("../img/skyscrapers.gif");
+    background-image: url("../img/city.gif");
     background-position: center;
 }
 
-.designScreen1Container{
+.firstScreenContainer {
     height: 100vh;
     width: 100vw;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-evenly;
 }
+
 
 .title{
     all: unset;
@@ -41,6 +44,8 @@ body {
     transform: scale(1.25);
 }
 
+
+
 .startButton{
     all: unset;
     background: red;
@@ -50,6 +55,7 @@ body {
     border-radius: 1em;
     border: 0.2em solid red;
     transition: 0.5s;
+    margin-top: 5em;
 }
 
 .startButton:hover{
@@ -58,76 +64,114 @@ body {
     transition: 0.25s;
 }
 
-/* Stage 2 */
+/* PATALLA 2 */
 
-.designScreen2 {
-    background-color: red;
+.secondScreen {
     height: 100vh;
     width: 100vw;
+    background-image: url("../img/skyscrapers.gif");
+
 }
 
-.designScreen2Container{
+.secondScreenContainer {
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    align-items: center;
 }
 
-.centerDesignScreen2{
+.centerSecondScreen{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background: blue;
-    width: 80%;
+
 }
 
-
-
-.fighters{
-    display:flex;
+.fighters {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    background: green;
 }
 
-.chooseHero{
-    background: none;
-    width:10em;
-    height: 15em;
-    border-radius: 1em;
-    margin-top: 2em;
-    background: purple;
+.picFighter{
+    background: black;
+    width: 12em;
+    padding: em;
+    height: 17em;
+    border-radius: 4em;
+    margin: .1em;
+    transition: 0.5s;
 }
 
-.chooseHero:hover{
-    background-color: grey;
-    transform: scale(1.25);
-    transition: 0.25s;
+.picFighter:hover{
+    background: grey;
+    transform: scale(1.75);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-.player1, .player2{
+.fighterOne, .fighterTwo{
+    width: 25%;
+    margin-top: 4em;
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 1em;
-    font-family: 'Press Start 2P', cursive;
-    background: pink;   
 }
 
-.playerName{
+.fighterName {
     font-family: 'Press Start 2P', cursive;
-    color: black;
+    cursor: crosshair;
+    color: white;
+    background: red;
+    font-size: xx-large;
+}
+
+#imgFighterSelected1, #imgFighterSelected2{
+    height: 40em;
+    width: 20em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgFighter1, .imgFighter2{
+    height: 30em;
+}
+
+.fighterSelected1{
+    
+    background: none;
+    width: 7em;
+    padding: .5em;
+    height: 12em;
+    border-radius: 1em;
+    margin: 1em;
+    transition: 0.5s;
+    background: whitesmoke;
+    
+}
+
+.fighterSelected2{
+   
+    
+    width: 7em;
+    padding: .5em;
+    height: 12em;
+    border-radius: 1em;
+    margin: 1em;
+    transition: 0.5s;
+    background: whitesmoke;
+    
 }
 
 
-
-
-.screen2button{
+.playButton {
     all: unset;
     background: red;
     color: white;
@@ -136,52 +180,168 @@ body {
     border-radius: 1em;
     border: 0.2em solid red;
     transition: 0.5s;
-    margin-top: 2em;
 }
 
-.screen2button:hover{
+.playButton:hover{
     cursor:crosshair;
     transform: scale(1.25);
     transition: 0.25s;
 }
 
-/* Stage 3 */
+/* PANTALLA 3 */
 
-.designScreen3 {
-    background-color: green;
-
+.thirdScreen {
     height: 100vh;
     width: 100vw;
+    
 
+    background-image: url("../img/nebula.jpg");
     background-position: center;
 }
 
-.designScreen3Container {
-    height: 100vh;
+.thirdScreenContainer{
     width: 100vw;
+    height: 100vh;
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
+.centralDiv{
+    height: 50em;
+    width: 20em;
 
-
-
-/* Stage 4 */
-
-.designScreen4 {
-    background-color: violet;
-
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.designScreen4Container{
+
+.vs {
+    font-family: 'Press Start 2P', cursive;;
+    color: white;
+    background: red;
+    font-size: 6em;
+    margin: 0;
+}
+ 
+#infoFight {
+    height: 5em;
+    width: 10em;
+    background: red;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    padding: .5em;
+    border-radius: 1em;
+    font-size: x-large; 
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attackButton {
+    all: unset;
+    margin-top: 2em;
+    background: red;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    padding: .5em;
+    border-radius: 1em;
+    font-size: xx-large;
+    transition: 0.5s;
+}
+
+.attackButton:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.lifeBar{
+    display: flex;
+    height: 2em;    
+    border-radius: .5em;
+    width: 18em;
+    background-color: blue;
+}
+
+#lifeBar1, #lifeBar2 {
+    display: flex;
+    position: relative;
+
+    background: red;
+    height: 2em;
+    width: 18em;
+    transition: width 0.6s;
+}
+
+.picFighter1, .picFighter2 {
+    height: 40em;
+    width: 20em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PANTALLA 4 */
+
+.fourthScreen {
     height: 100vh;
     width: 100vw;
+
+    background-image: url("../img/galaxy2.png");
+    background-position: center;
+}
+
+.fourthScreenContainer{
+    width: 100vw;
+    height: 100vh;
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.winnerPic {
+    height: 40em;
+    width: 20em;
+}
+
+.winnerButton {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.winnerText {
+    font-family: 'Press Start 2P', cursive;;
+    color: white;
+    background: red;
+    font-size: 3em;
+}
+
+.resetButton {
+    all: unset;
+    background: red;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    padding: .5em;
+    border-radius: 1em;
+    font-size: xx-large;
+    transition: 0.5s;
+}
+
+.resetButton:hover{
+    cursor: crosshair;
+    transform: scale(1.05);
+    transition: 0.5s;
 }

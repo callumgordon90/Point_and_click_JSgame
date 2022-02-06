@@ -4,94 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
-
+    <title>¡¡¡BATTLE OF THE STRONGEST SUPERHEROES OF THE GALAXY!!!</title>
+    
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-    <link href="css/style.css" rel="stylesheet">
 
-    
+
+    <link href="css/style.css" type="text/css" rel="stylesheet" >
 </head>
 <body>
     
     
     
-<!-- Screen 1 -->
-    <section id="screen1">
-        <div class="designScreen1">
-            <div class="designScreen1Container">
+    <!-- PANTALLA 1 INICIO -->
 
-                <h2 class="title">¡¡¡Batalla de los Superhéroes más Fuertes de la Galaxia!!!</h2>
+    <div class="firstScreen" id="stage1">
 
-                <button onclick="cambiaPantalla(2)" class="startButton">Press Start</button>
-            </div>
+        <div class="firstScreenContainer">
+            <h2 class="title">¡¡¡Batalla de los Superhéroes más Fuertes de la Galaxia!!!</h2>
+
+            <button onclick="changeStage('stage2')" class="startButton">Press Start</button>
         </div>
-    </section>
-<!-- Screen 2 -->
+   </div>
 
-    <section id="screen2" style="display:none">
-        <div class="designScreen2">
-            <div class="designScreen2Container">
-                
-                <div class="player1">
-                    <div class="playerName">Player 1</div>
-                    <div id="chosenFighterImg"></div>
-                </div>
+    <!-- PANTALLA 2 ELIGE PERSONAJE -->
 
-                    <div class="centerDesignScreen2">
-                        <div class="fighters">
-                            <div class="hero"><img id="one" onclick="chooseFighter(1)" class="chooseHero" src="img/spidermanbody.png"></div>
-                            <div class="hero"><img id="one" onclick="chooseFighter(1)" class="chooseHero" src="img/batmanbody.png"></div>
-                            <div class="hero"><img id="one" onclick="chooseFighter(1)" class="chooseHero" src="img/hulkbody.png"></div>
-                            <div class="hero"><img id="one" onclick="chooseFighter(1)" class="chooseHero" src="img/wonderwomanbody.png"></div>
-                            <div class="hero"><img id="one" onclick="chooseFighter(1)" class="chooseHero" src="img/mebody.png"></div>
-                            <div class="hero"><img id="one" onclick="chooseFighter(1)" class="chooseHero" src="img/zeus.png"></div>
-                        </div>
-                        <button onclick="cambiaPantalla(3)" class="screen2button">Fight!</button>
-
-
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non eros euismod, fringilla odio sit amet, semper diam. Duis ut lacus id justo efficitur dignissim quis vel nisl. Morbi et hendrerit quam. Phasellus dictum ex eu iaculis porta. Sed turpis mi, faucibus quis sodales a, commodo a mauris. Vestibulum sagittis nec orci et convallis. Quisque hendrerit, mi sit amet pellentesque consequat, nisl eros convallis lorem, sit amet congue ante erat in tortor. Praesent feugiat, dolor a pellentesque efficitur, turpis sem tristique erat, et posuere ipsum mi et felis. Etiam vel rutrum neque, sit amet congue felis. Vestibulum pellentesque bibendum consectetur.
-
-
-                        </p>
-
-                    </div>
-
-
+    <div class="secondScreen" id="stage2" style="display:none">  
+        <div class="secondScreenContainer">
+    
+            <div class="fighterOne">
+                <div class="fighterName">Player 1</div>
+                <div id="imgFighterSelected1"></div>
+            </div>
+            <div class="centerSecondScreen">
+                <div class="fighters">
+                    <div class="personaje"><img id="1" onclick="chooseFighter(1)" class="picFighter" src="img/spiderman.png"></div>
+                    <div class="personaje"><img id="2" onclick="chooseFighter(2)"  class="picFighter" src="img/batman.png"></div>
+                    <div class="personaje"><img id="3" onclick="chooseFighter(3)" class="picFighter" src="img/hulk.png"></div>
+                    <div class="personaje"><img id="4" onclick="chooseFighter(4)" class="picFighter" src="img/wonderwoman.png"></div>
+                    <div class="personaje"><img id="5" onclick="chooseFighter(5)" class="picFighter" src="img/el misterioso caminante del norte.png"></div>
+                    <div class="personaje"><img id="6" onclick="chooseFighter(6)" class="picFighter" src="img/zeus.png"></div>
                     
-                <div class="player2">
-                    <div class="playerName">Player 2</div>
-                    <div id="chosenFighterImg2"></div>
                 </div>
-
-
-
-
-
+                <button onclick="changeStage('stage3')" class="playButton">Fight!!</button>
             </div>
+    
+            <div class="fighterTwo">
+                <div class="fighterName">Player 2</div>
+                <div id="imgFighterSelected2"></div>
+            </div>
+
         </div>
-    </section>
+    </div>
+
+    <!-- PANTALLA 3 PELEA -->
+
+    <div class="thirdScreen" id="stage3" style="display:none">  
+        <div class="thirdScreenContainer" id="players">
+
+        </div>
+    </div>
 
 
-<!-- Screen 3 -->
-    <section id="screen3" style="display:none" onclick="cambiaPantalla(4)">
-        <div class="designScreen3"></div>
-            <div class="designScreen3Container" id="players"></div>
-    </section>
+    <!-- PANTALLA 4 GANADOR -->
 
- <!-- Screen 4 -->
+    <div class="fourthScreen" id="stage4" style="display:none">
+        <div class="fourthScreenContainer" id="winner"></div>
 
-    <section id="screen4" style="display:none" onclick="cambiaPantalla(1)" >
-        <div class="designScreen4"></div>
-            <div class="designScreen4Container" id="ganador"></div>
-    </section>
 
-    <script src="js/fighters.js"></script>
+    
+        
+
+    <script src="js/characters.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
