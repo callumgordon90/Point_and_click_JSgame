@@ -273,7 +273,7 @@ body{
     display: flex;
     height: 2em;    
     border-radius: .5em;
-    width: 18em;
+    width: 30em;
     background-color: blue;
 }
 
@@ -283,7 +283,7 @@ body{
 
     background: red;
     height: 2em;
-    width: 18em;
+    width: 30em;
     transition: width 0.6s;
 }
 
