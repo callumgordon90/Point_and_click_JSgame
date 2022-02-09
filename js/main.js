@@ -67,8 +67,8 @@ const fillPlayers = () => {
 
     players.innerHTML = `
     <div class="fighterOne" >
+        <div class="picFighter1"><img class="imgFighter1" src="img/${fighter1.picName}.png" alt="fighter1" ></div>
          <div class="lifeBar"><div id="lifeBar1"></div></div>
-         <div class="picFighter1"><img class="imgFighter1" src="img/${fighter1.picName}.png" alt="fighter1" ></div>
     </div>
     <div class="centralDiv">
         <div id="infoContainer"><p class="vs">vs</p></div>
@@ -76,8 +76,8 @@ const fillPlayers = () => {
         
     </div>
     <div class="fighterTwo">
-         <div class="lifeBar"><div id="lifeBar2"></div></div>
          <div class="picFighter2"><img class="imgFighter2" src="img/${fighter2.picName}.png" alt="fighter2"></div>
+         <div class="lifeBar"><div id="lifeBar2"></div></div>
     </div>`
 }
 

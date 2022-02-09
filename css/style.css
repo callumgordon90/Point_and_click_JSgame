@@ -113,8 +113,8 @@ body{
 
 .picFighter:hover{
     background: grey;
-    transform: scale(1.75);
-    transition: 0.5s;
+    transform: scale(1.25);
+    transition: 1.15s;
     cursor: pointer;
 }
 
@@ -290,7 +290,8 @@ body{
 .picFighter1, .picFighter2 {
     height: 40em;
     width: 20em;
-
+    margin-top: -4.5em;
+    margin-bottom: 2.5em;
     display: flex;
     justify-content: center;
     align-items: center;
