@@ -103,9 +103,9 @@ body{
 
 .picFighter{
     background: black;
-    width: 12em;
-    padding: em;
-    height: 17em;
+    width: 15em;
+    padding: .5em;
+    height: 20em;
     border-radius: 4em;
     margin: .1em;
     transition: 0.5s;
@@ -152,9 +152,9 @@ body{
 .fighterSelected1{
     
     background: none;
-    width: 7em;
+    width: 15em;
     padding: .5em;
-    height: 12em;
+    height: 20em;
     border-radius: 1em;
     margin: 1em;
     transition: 0.5s;
@@ -165,9 +165,9 @@ body{
 .fighterSelected2{
    
     
-    width: 7em;
+    width: 15em;
     padding: .5em;
-    height: 12em;
+    height: 20em;
     border-radius: 1em;
     margin: 1em;
     transition: 0.5s;
