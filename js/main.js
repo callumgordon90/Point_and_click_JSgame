@@ -104,18 +104,18 @@ const fighting = () => {
         if (turn == 0) {
             if ( specialAttack == 3 ) {
                 fighter1.specialHit(fighter2);
-                infoFight.innerHTML = `¡!!!${fighter1.name}busca la fatalidad!!!`;
+                infoFight.innerHTML = `¡¡¡Estos héroes se estan intentando matar!!!`;
             } else {
                 fighter1.hit(fighter2);
-                infoFight.innerHTML = `${fighter1.name} pega ${fighter2.name}`;
+                infoFight.innerHTML = `¡¡¡${fighter1.name} hits ${fighter2.name}!!!`;
             }
         } else {
             if ( specialAttack == 1 ) {
                 fighter2.specialHit(fighter1);
-                infoFight.innerHTML = `la batalla esta en camino!`;
+                infoFight.innerHTML = `¡¡¡La batalla esta en camino!!!`;
             } else {
                 fighter2.hit(fighter1);
-                infoFight.innerHTML = `${fighter2.name} pega una paliza a ${fighter1.name}`;
+                infoFight.innerHTML = `¡¡¡${fighter2.name} hits ${fighter1.name}!!!`;
             }
         }
     };

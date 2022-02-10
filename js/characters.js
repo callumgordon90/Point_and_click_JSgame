@@ -1,7 +1,7 @@
 class Fighter{
 
     constructor(name, picName, attack, defense, technique, speed){
-        this.life = 300;
+        this.life = 500;
         this.luck = Math.floor(Math.random() *11);
         this.name = name;
         this.picName = picName
@@ -22,12 +22,12 @@ class Fighter{
     }
 };
 
-let player1 = new Fighter("Spiderman", "spiderman", 30, 20, 30, 30);
-let player2 = new Fighter("Batman", "batman", 30, 30, 40, 20);
-let player3 = new Fighter("Hulk", "hulk", 50, 40, 30, 10);
-let player4 = new Fighter("Wonderwoman", "wonderwoman", 40, 20, 20, 30);
+let player1 = new Fighter("Spiderman", "spiderman", 70, 60, 80, 80);
+let player2 = new Fighter("Batman", "batman", 70, 50, 70, 70);
+let player3 = new Fighter("Hulk", "hulk", 80, 90, 70, 80);
+let player4 = new Fighter("Wonderwoman", "wonderwoman", 50, 80, 70, 60);
 let player5 = new Fighter("El Misterioso caminante del Norte", "el misterioso caminante del norte", 40, 30, 30, 20);
-let player6 = new Fighter("Zeus", "zeus", 30, 20, 20, 20);
+let player6 = new Fighter("Zeus", "zeus", 80, 70, 40, 50);
 
 
 let allPlayers = {
